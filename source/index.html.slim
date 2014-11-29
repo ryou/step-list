@@ -1,0 +1,27 @@
+.container
+  table.step-list
+    - (1...9).each_with_index do |index|
+      tr.step-list__line
+        td.step-list__cell
+          .step-list__down.step-list__down--blue style="opacity: #{0.4 + 0.075*index};"
+            .step-list__rect == index
+            .step-list__tri
+        td.step-list__cell
+          h2.step-list__heading Step#{index}
+          p.step-list__text 適当な本文を入力適当な本文を入力適当な本文を入力適当な本文を入力適当な本文を入力適当な本文を入力適当な本文を入力
+    tr.step-list__line
+      td.step-list__cell
+        .step-list__down.step-list__down--red
+          .step-list__rect 9
+          .step-list__tri
+      td.step-list__cell
+        h2.step-list__heading Step9
+        p.step-list__text 適当な本文を入力適当な本文を入力適当な本文を入力適当な本文を入力適当な本文を入力適当な本文を入力適当な本文を入力
+    tr.step-list__line
+      td.step-list__cell
+        .step-list__down.step-list__down--yellow
+          .step-list__rect 10
+          .step-list__tri
+      td.step-list__cell
+        h2.step-list__heading Step10
+        p.step-list__text 適当な本文を入力適当な本文を入力適当な本文を入力適当な本文を入力適当な本文を入力適当な本文を入力適当な本文を入力

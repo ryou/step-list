@@ -1,0 +1,54 @@
+@import import/base/
+
+$mainBlackColor: #333
+
+body
+  color: $mainBlackColor
+  padding-top: 20px
+
+.container
+  width: 700px
+  margin: 0 auto
+
+.step-list
+  +e(line)
+  +e(cell)
+    padding-right: 20px
+    vertical-align: top
+  $theMainColor: #3498db
+  $theWidth: 60px
+  =theSetDown($inColor)
+    .step-list__rect
+      background-color: $inColor
+    .step-list__tri
+      border-top: $theWidth/2 solid $inColor
+  +e(down)
+    +m(blue)
+      +theSetDown(#3498db)
+    +m(red)
+      +theSetDown(#c0392b)
+    +m(yellow)
+      +theSetDown(#f39c12)
+  +e(rect)
+    width: $theWidth
+    min-height: 100px
+    background-color: $theMainColor
+    +border-radius(3px 3px 0 0)
+    color: white
+    text-align: center
+    font-weight: bold
+    padding: 10px
+    font-size: 24px
+    letter-spacing: 0.1em
+  +e(tri)
+    width: 0
+    height: 0
+    border: $theWidth/2 solid transparent
+    border-top: $theWidth/2 solid $theMainColor
+  +e(heading)
+    +fz-rem(1.8)
+    font-weight: bold
+    margin-bottom: 10px
+  +e(text)
+    +fz-rem(1.4)
+    margin-bottom: 20px
