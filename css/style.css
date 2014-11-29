@@ -1,0 +1,150 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+body {
+  font-family: Arial, "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, Meiryo, sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  color: #333;
+  padding-top: 20px;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.step-list__cell {
+  padding-right: 20px;
+  vertical-align: top;
+}
+.step-list__down--blue .step-list__rect {
+  background-color: #3498db;
+}
+.step-list__down--blue .step-list__tri {
+  border-top: 30px solid #3498db;
+}
+.step-list__down--red .step-list__rect {
+  background-color: #c0392b;
+}
+.step-list__down--red .step-list__tri {
+  border-top: 30px solid #c0392b;
+}
+.step-list__down--yellow .step-list__rect {
+  background-color: #f39c12;
+}
+.step-list__down--yellow .step-list__tri {
+  border-top: 30px solid #f39c12;
+}
+.step-list__rect {
+  width: 60px;
+  min-height: 100px;
+  background-color: #3498db;
+  -moz-border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+.step-list__tri {
+  width: 0;
+  height: 0;
+  border: 30px solid transparent;
+  border-top: 30px solid #3498db;
+}
+.step-list__heading {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.step-list__text {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
