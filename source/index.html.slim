@@ -4,7 +4,7 @@
       tr.step-list__line
         td.step-list__cell
           .step-list__down.step-list__down--blue style="opacity: #{0.4 + 0.075*index};"
-            .step-list__rect == index
+            .step-list__rect == "%02d" % index
             .step-list__tri
         td.step-list__cell
           h2.step-list__heading Step#{index}
@@ -12,7 +12,7 @@
     tr.step-list__line
       td.step-list__cell
         .step-list__down.step-list__down--red
-          .step-list__rect 9
+          .step-list__rect 09
           .step-list__tri
       td.step-list__cell
         h2.step-list__heading Step9

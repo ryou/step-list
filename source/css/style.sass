@@ -4,17 +4,26 @@ $mainBlackColor: #333
 
 body
   color: $mainBlackColor
-  padding-top: 20px
+  padding: 50px 0
 
 .container
   width: 700px
   margin: 0 auto
+  padding-bottom: 50px
+
 
 .step-list
   +e(line)
+    $theBorder: 1px solid #DDD
+    border-bottom: $theBorder
+    &:first-child
+      border-top: $theBorder
+
   +e(cell)
+    padding-top: 20px
     padding-right: 20px
     vertical-align: top
+
   $theMainColor: #3498db
   $theWidth: 60px
   =theSetDown($inColor)
@@ -29,6 +38,7 @@ body
       +theSetDown(#c0392b)
     +m("yellow")
       +theSetDown(#f39c12)
+
   +e(rect)
     width: $theWidth
     min-height: 100px
@@ -40,15 +50,18 @@ body
     padding: 10px
     font-size: 24px
     letter-spacing: 0.1em
+
   +e(tri)
     width: 0
     height: 0
     border: $theWidth/2 solid transparent
     border-top: $theWidth/2 solid $theMainColor
+
   +e(heading)
     +fz-rem(1.8)
     font-weight: bold
     margin-bottom: 10px
+
   +e(text)
     +fz-rem(1.4)
     margin-bottom: 20px
